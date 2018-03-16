@@ -1,18 +1,18 @@
 #include <stdio.h>
 int main()
 {
-    int n1, n2, minMultiple;
+    int a1, a2, minMul;
     printf("Enter two positive integers: ");
-    scanf("%d %d", &n1, &n2);
-    minMultiple = (n1>n2) ? n1 : n2;
+    scanf("%d %d", &a1, &a2);
+    minMul = (a1>a2) ? a1 : a2;
     while(1)
     {
-        if( minMultiple%n1==0 && minMultiple%n2==0 )
+        if( minMultiple%a1==0 && minMultiple%a2==0 )
         {
-            printf("The LCM of %d and %d is %d.", n1, n2,minMultiple);
+            printf("The LCM of %d and %d is %d",a1,a2,minMul);
             break;
         }
-        ++minMultiple;
+        ++minMul;
     }
     return 0;
 }
